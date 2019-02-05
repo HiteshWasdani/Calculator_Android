@@ -1,0 +1,201 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.newcreate.calculator.shortButton">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4.5">
+
+<!-- Left most part   -->
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="3"
+           android:background="#00ffdd"
+           android:orientation="vertical">
+
+            <LinearLayout
+               style="@style/rowButtonLayout">
+
+                <Button
+                    android:id="@+id/b7"
+                    style="@style/numberButton"
+                    android:textSize="23sp"
+                    android:onClick="buttonClicked"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/b8"
+                    style="@style/numberButton"
+                    android:textSize="23sp"
+                    android:onClick="buttonClicked"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/b9"
+                    style="@style/numberButton"
+                    android:textSize="23sp"
+                    android:onClick="buttonClicked"
+                    android:text="9" />
+
+
+            </LinearLayout>
+
+           <LinearLayout
+               style="@style/rowButtonLayout">
+
+               <Button
+                   android:id="@+id/b4"
+                   style="@style/numberButton"
+                   android:textSize="23sp"
+                   android:onClick="buttonClicked"
+                   android:text="4" />
+
+               <Button
+                   android:id="@+id/b5"
+                   style="@style/numberButton"
+                   android:textSize="23sp"
+                   android:onClick="buttonClicked"
+                   android:text="5" />
+
+               <Button
+                   android:id="@+id/b6"
+                   style="@style/numberButton"
+                   android:textSize="23sp"
+                   android:onClick="buttonClicked"
+                   android:text="6" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               style="@style/rowButtonLayout">
+
+               <Button
+                   android:id="@+id/b1"
+                   style="@style/numberButton"
+                   android:onClick="buttonClicked"
+                   android:textSize="23sp"
+                   android:text="1" />
+
+               <Button
+                   android:id="@+id/b2"
+                   style="@style/numberButton"
+                   android:onClick="buttonClicked"
+                   android:textSize="23sp"
+                   android:text="2" />
+
+               <Button
+                   android:id="@+id/b3"
+                   style="@style/numberButton"
+                   android:onClick="buttonClicked"
+                   android:textSize="23sp"
+                   android:text="3" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               style="@style/rowButtonLayout">
+
+               <Button
+                   android:id="@+id/bdot"
+                   style="@style/numberButton"
+                   android:onClick="buttonClicked"
+                   android:text="." />
+
+               <Button
+                   android:id="@+id/b0"
+                   style="@style/numberButton"
+                   android:onClick="buttonClicked"
+                   android:textSize="23sp"
+                   android:text="0" />
+
+               <Button
+                   android:id="@+id/bequal"
+                   style="@style/numberButton"
+                   android:textSize="23sp"
+                   android:onClick="buttonClicked"
+                   android:text="=" />
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+   <!--      operator Button  -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bdel"
+                style="@style/operatorButton"
+                android:onClick="buttonClicked"
+                android:textSize="23sp"
+                android:text="del" />
+
+            <Button
+                android:id="@+id/bdiv"
+                style="@style/operatorButton"
+                android:onClick="buttonClicked"
+                android:textSize="23sp"
+                android:text="/" />
+
+            <Button
+                android:id="@+id/bmul"
+                style="@style/operatorButton"
+                android:onClick="buttonClicked"
+                android:textSize="23sp"
+                android:text="x" />
+
+            <Button
+                android:id="@+id/bsub"
+                style="@style/operatorButton"
+                android:textSize="23sp"
+                android:onClick="buttonClicked"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/badd"
+                style="@style/operatorButton"
+                android:onClick="buttonClicked"
+                android:textSize="23sp"
+                android:text="+" />
+
+        </LinearLayout>
+
+
+   <!--              right most side Button   -->
+<!--
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#c29c55"
+                android:onClick="fragmentChange"
+                android:src="@mipmap/less_new"
+                android:layout_gravity="center"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+-->
+    </LinearLayout>
+
+
+</FrameLayout>

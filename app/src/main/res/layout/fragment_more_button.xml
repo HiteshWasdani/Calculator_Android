@@ -1,0 +1,169 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.newcreate.calculator.moreButton">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4.5">
+
+
+<!--      LeftMost Part                       -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=">"
+                android:onClick="fragmentChange"
+                android:background="#c29c55"
+                android:textSize="30sp"/>
+        </LinearLayout>
+
+
+<!--      Middle Part                         -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+   <!--         <LinearLayout
+                style="@style/rowButtonLayout" >
+
+                <Button
+                    style="@style/moreOperatorButton"
+                    android:text="INV" />
+
+                <Button
+                    style="@style/moreOperatorButton"
+                    android:text="RAD" />
+
+                <Button
+                    android:id="@+id/bper"
+                    style="@style/moreOperatorButton"
+                    android:onClick="buttonClicked"
+                    android:text="%" />
+
+            </LinearLayout>
+     -->
+            <LinearLayout
+                style="@style/rowButtonLayout" >
+
+                <Button
+                    android:id="@+id/bsin"
+                    style="@style/moreOperatorButton"
+                    android:onClick="buttonClicked"
+                    android:text="sin" />
+
+                <Button
+                    android:id="@+id/bcos"
+                    style="@style/moreOperatorButton"
+                    android:onClick="buttonClicked"
+                    android:text="cos" />
+
+                <Button
+                    android:id="@+id/btan"
+                    style="@style/moreOperatorButton"
+                    android:onClick="buttonClicked"
+                    android:text="tan" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/rowButtonLayout" >
+
+                <Button
+                    android:id="@+id/bln"
+                    style="@style/moreOperatorButton"
+                    android:onClick="buttonClicked"
+                    android:text="ln" />
+
+                <Button
+                    android:id="@+id/blog"
+                    style="@style/moreOperatorButton"
+                    android:onClick="buttonClicked"
+                    android:text="log" />
+
+                <Button
+                    android:id="@+id/bper"
+                    style="@style/moreOperatorButton"
+                    android:onClick="buttonClicked"
+                    android:text="%" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/rowButtonLayout" >
+
+                <ImageButton
+                    android:id="@+id/bpi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:onClick="buttonClicked"
+                    android:src="@mipmap/ic_pi_new" />
+
+                <Button
+                    android:id="@+id/bexp"
+                    style="@style/moreOperatorButton"
+                    android:onClick="buttonClicked"
+                    android:text="e" />
+
+                <Button
+                    android:id="@+id/bpow"
+                    style="@style/moreOperatorButton"
+                    android:onClick="buttonClicked"
+                    android:text="^" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/rowButtonLayout" >
+
+                <Button
+                    android:id="@+id/bopen"
+                    style="@style/moreOperatorButton"
+                    android:onClick="buttonClicked"
+                    android:text="(" />
+
+                <Button
+                    android:id="@+id/bclose"
+                    style="@style/moreOperatorButton"
+                    android:onClick="buttonClicked"
+                    android:text=")" />
+
+                <ImageButton
+                    android:id="@+id/broot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:onClick="buttonClicked"
+                    android:src="@mipmap/ic_root_new" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
